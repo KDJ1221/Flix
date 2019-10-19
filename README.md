@@ -19,9 +19,7 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 - [X] (1pt) Run your app on a real device.
 
 ### App Walkthough GIF
-`TODO://` Add the URL to your animated app walkthough `gif` in the image tag below, `YOUR_GIF_URL_HERE`. Make sure the gif actually renders and animates when viewing this README. (🚫 Remove this paragraph after after adding gif)
-
 <img src="https://media.giphy.com/media/fA1Mp5UnSmLVlpaq14/giphy.gif" width=250><br>
 
 ### Notes
-Describe any challenges encountered while building the app.
+A problem I faced when working on this app was specifically related to connecting the ViewController files to the different objects in Main.storyboard, and remembering to add the correct Class Name for each.
