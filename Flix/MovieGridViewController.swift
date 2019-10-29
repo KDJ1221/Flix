@@ -44,10 +44,6 @@ class MovieGridViewController: UIViewController, UICollectionViewDataSource, UIC
                 self.collectionView.reloadData()
                 print(self.movies)
                 
-                // TODO: Get the array of movies
-                // TODO: Store the movies in a property to use elsewhere
-                // TODO: Reload your table view data
-                
             }
             
         }
@@ -72,6 +68,19 @@ class MovieGridViewController: UIViewController, UICollectionViewDataSource, UIC
         return cell
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+       //  Pass the selected object to the new view controller.
+        
+        // Find the selected movie
+        let cell = sender as! UICollectionViewCell
+        let indexPath = collectionView.indexPath(for: cell)!
+        let movie = movies[indexPath.row]
+        
+        // Pass the selected movie to the details view controller
+        let detailsViewController = segue.destination as! MovieDetailsViewController
+        detailsViewController.movie = movie
+    }
 
     /*
     // MARK: - Navigation
