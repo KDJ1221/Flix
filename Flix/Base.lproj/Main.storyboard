@@ -104,6 +104,10 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5ZM-5n-nTR">
                                 <rect key="frame" x="20" y="232" width="147" height="224"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="ZF5-dJ-k5T" appends="YES" id="ESh-uA-C0S"/>
+                                </connections>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BSB-6D-qTg">
                                 <rect key="frame" x="175" y="380" width="219" height="23"/>
@@ -132,8 +136,13 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KlV-TJ-Gv4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="ZF5-dJ-k5T">
+                    <connections>
+                        <segue destination="rEY-wX-VlB" kind="presentation" id="jWG-gQ-HXc"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-836" y="2329"/>
+            <point key="canvasLocation" x="-642" y="2417"/>
         </scene>
         <!--Now Playing-->
         <scene sceneID="ZaM-Or-UqN">
@@ -231,7 +240,7 @@
             <objects>
                 <viewController id="rEY-wX-VlB" customClass="TrailerViewController" customModule="Flix" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="U0U-84-fMr">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TSJ-A3-XiF">
@@ -261,6 +270,6 @@
         <image name="superhero_tabbar_item" width="21" height="23"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="e2E-iR-Ypj"/>
+        <segue reference="JPc-a3-5s8"/>
     </inferredMetricsTieBreakers>
 </document>

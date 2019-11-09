@@ -7,14 +7,18 @@
 //
 
 import UIKit
+import WebKit
 
 class TrailerViewController: UIViewController {
 
     @IBOutlet weak var trailerView: WKWebView!
+    
+    var trailerUrl : URL!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        trailerView.load(URLRequest(url: trailerUrl))
     }
     
 
